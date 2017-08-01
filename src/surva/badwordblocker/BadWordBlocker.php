@@ -50,7 +50,7 @@ class BadWordBlocker extends PluginBase {
      * @param array $contains
      * @return bool
      */
-    public function contains($string, array $contains): bool {
+    public function contains($string, array $contains) {
         foreach($contains as $contain) {
             if(strpos(strtolower($string), $contain) !== false) {
                 return true;
